@@ -1,0 +1,19 @@
+{
+  "name": "p3_jstievet",
+  "version": "1.0.0",
+  "description": "projet3",
+  "main": "index.js",
+  "scripts": {
+    "test": "\"echo \\\"Error : no test specified\\\" && exit 1\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jstievet/P3_Jstievet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jstievet/P3_Jstievet/issues"
+  },
+  "homepage": "https://github.com/Jstievet/P3_Jstievet#readme"
+}
