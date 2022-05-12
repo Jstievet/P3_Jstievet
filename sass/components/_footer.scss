@@ -1,0 +1,32 @@
+.footer {
+  width: 100%;
+  color: white;
+  background-color: rgb(68, 66, 66);
+  &__logo {
+    filter: invert(100%);
+    width: 100px;
+    margin-left: $margin-footer;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    & img {
+      width: 100px;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 25px;
+    margin-left: $margin-footer;
+    & p,
+    div,
+    a {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__contact a {
+    text-decoration: none;
+  }
+}

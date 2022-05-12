@@ -17,5 +17,8 @@
     "url": "https://github.com/Jstievet/P3_Jstievet/issues"
   },
   "homepage": "https://github.com/Jstievet/P3_Jstievet#readme",
-  "browserslist": "last 4 versions"
+  "browserslist": "last 4 versions",
+  "dependencies": {
+    "postcss": "^8.4.13"
+  }
 }

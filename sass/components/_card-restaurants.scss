@@ -46,8 +46,12 @@
   &__heart {
     font-size: 20px;
     margin: 15px;
+    &:hover {
+      color: $primary-color;
+      cursor: pointer;
+    }
     &:focus {
-      color: aqua;
+      background-color: black;
     }
   }
 }
