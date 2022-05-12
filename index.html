@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>ohmyfood</title>
     <script
@@ -53,78 +59,77 @@
         </section>
         <section class="container-restaurants">
           <h2>Restaurants</h2>
-          <div class="container-restaurants-card">
-            <div class="container-restaurants-card-cadre-miniature">
-              <picture>
-                <img />
-              </picture>
+          <div class="restaurants-card">
+            <div class="restaurants-card__cadre">
+              <img src="./images/restaurants/jay-wennington.jpg" />
             </div>
-            <div class="container-restaurants-card-description">
-              <div class="conttainer-restaurants-card-description-text">
+            <div class="restaurants-card__description">
+              <div class="restaurant-card__text">
                 <h3>la plaette du goût</h3>
                 <p>Ménilmontant</p>
               </div>
-              <div class="conttainer-restaurants-card-description-coeur">
-                <i></i>
+              <div class="restaurants-card__heart">
+                <i
+                  class="fa-regular fa-heart"
+                  class="restaurants-card__heart"
+                ></i>
               </div>
             </div>
           </div>
-          <div class="container-restaurants-card">
-            <div class="container-restaurants-card-cadre-miniature">
-              <picture>
-                <img />
-              </picture>
+          <div class="restaurants-card">
+            <div class="restaurants-card__cadre">
+              <img src="./images/restaurants/stil.jpg" />
             </div>
-            <div class="container-restaurants-card-description">
-              <div class="conttainer-restaurants-card-description-text">
+            <div class="restaurants-card__description">
+              <div class="restaurant-card__text">
                 <h3>la note enchantée</h3>
                 <p>Charonne</p>
               </div>
-              <div class="conttainer-restaurants-card-description-coeur">
-                <i></i>
+              <div class="restaurants-card__heart">
+                <i class="fa-regular fa-heart"></i>
               </div>
             </div>
           </div>
-          <div class="container-restaurants-card">
-            <div class="container-restaurants-card-cadre-miniature">
-              <picture>
-                <img />
-              </picture>
+          <div class="restaurants-card">
+            <div class="restaurants-card__cadre">
+              <img src="./images/restaurants/toa-heftiba.jpg" />
             </div>
-            <div class="container-restaurants-card-description">
-              <div class="conttainer-restaurants-card-description-text">
+            <div class="restaurants-card__description">
+              <div class="restaurant-card__text">
                 <h3>à la française</h3>
                 <p>Cité Rouge</p>
               </div>
-              <div class="conttainer-restaurants-card-description-coeur">
-                <i></i>
+              <div class="restaurants-card__heart">
+                <i class="fa-regular fa-heart"></i>
               </div>
             </div>
           </div>
-          <div class="container-restaurants-card">
-            <div class="container-restaurants-card-cadre-miniature">
-              <picture>
-                <img />
-              </picture>
+          <div class="restaurants-card">
+            <div class="restaurants-card__cadre">
+              <img src="./images/restaurants/louis-hansel-shotsoflouis.jpg" />
             </div>
-            <div class="container-restaurants-card-description">
-              <div class="conttainer-restaurants-card-description-text">
-                <h3>Le délice des sens</h3>
+            <div class="restaurants-card__description">
+              <div class="restaurant-card__text">
+                <h3>le délice des sens</h3>
                 <p>Folie-Méricourt</p>
               </div>
-              <div class="conttainer-restaurants-card-description-coeur">
-                <i></i>
+              <div class="restaurants-card__heart">
+                <i class="fa-regular fa-heart"></i>
               </div>
             </div>
           </div>
         </section>
       </main>
-      <footer>
-        <div class="footer-logo"></div>
-        <div class="footer-text-icone"></div>
-        <div class="footer-text-icone"></div>
-        <p>Mentions légales</p>
-        <p>COntact</p>
+      <footer class="footer">
+        <div class="footer__logo">
+          <img src="./images/logo/ohmyfood.png" />
+        </div>
+        <div class="footer__text">
+          <div><i class="fa-solid fa-utensils"></i> Proposer un restaurant</div>
+          <div><i class="fa-solid fa-link"></i> Devenir partenaire</div>
+          <p>Mentions légales</p>
+          <p>COntact</p>
+        </div>
       </footer>
     </div>
   </body>
