@@ -4,7 +4,8 @@
   "description": "projet3",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/styles.css"
+    "sass": "sass --watch ./sass/main.scss:./css/styles.css",
+    "prefix": "postcss ./css/styles.css --use autoprefixer -d ./css/prefixed/"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/Jstievet/P3_Jstievet/issues"
   },
-  "homepage": "https://github.com/Jstievet/P3_Jstievet#readme"
+  "homepage": "https://github.com/Jstievet/P3_Jstievet#readme",
+  "browserslist": "last 4 versions",
+  "dependencies": {
+    "postcss": "^8.4.13"
+  }
 }
