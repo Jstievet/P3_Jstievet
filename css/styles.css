@@ -265,6 +265,20 @@ header {
   height: 250px;
   min-width: 400px;
 }
+.main-photo__lapalettedugout {
+  background-image: url(../images/restaurants/jay-wennington.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+  min-width: 400px;
+}
+.main-photo__ledelicedessens {
+  background-image: url(../images/restaurants/louis-hansel-shotsoflouis.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+  min-width: 400px;
+}
 
 .main-titre {
   display: flex;

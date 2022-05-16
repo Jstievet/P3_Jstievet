@@ -124,6 +124,14 @@ header {
     background-image: url(../images/restaurants/stil.jpg);
     @include img-menu;
   }
+  &__lapalettedugout {
+    background-image: url(../images/restaurants/jay-wennington.jpg);
+    @include img-menu;
+  }
+  &__ledelicedessens {
+    background-image: url(../images/restaurants/louis-hansel-shotsoflouis.jpg);
+    @include img-menu;
+  }
 }
 .main-titre {
   display: flex;
