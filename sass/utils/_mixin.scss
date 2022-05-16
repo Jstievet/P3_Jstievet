@@ -10,8 +10,20 @@
 }
 @mixin button {
   color: white;
+  cursor: pointer;
   border: none;
   background: linear-gradient(to left, $primary-color, $secondary-color);
   border-radius: $border-radius;
   padding: 15px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 180px;
+  font-size: 15px;
+}
+@mixin img-menu {
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+  min-width: 400px;
 }
