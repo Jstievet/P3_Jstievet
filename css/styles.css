@@ -23,6 +23,16 @@
   max-height: 180px;
   width: 350px;
 }
+.restaurants-card__nouveau {
+  position: absolute;
+  font-size: 13px;
+  font-weight: bold;
+  color: rgba(17, 145, 5, 0.4941176471);
+  background-color: #99e2d0;
+  padding: 8px;
+  margin-left: 275px;
+  margin-top: 25px;
+}
 .restaurants-card__description {
   width: 100%;
   display: flex;
@@ -295,6 +305,9 @@ header {
   margin-top: -31px;
   padding-top: 25px;
 }
+.main-titre i {
+  font-size: 25px;
+}
 
 .container-menu {
   background-color: rgb(231, 227, 227);
@@ -310,7 +323,12 @@ header {
   max-width: 50%;
   margin: auto;
 }
-.menu h2 {
+.menu__trait-titre {
+  width: 10%;
+  height: 2px;
+  border: none;
+  background-color: #99e2d0;
+  margin: 0;
   margin-bottom: 20px;
 }
 .menu__selection {

@@ -146,6 +146,9 @@ header {
   margin-bottom: 30px;
   margin-top: -31px;
   padding-top: 25px;
+  & i {
+    font-size: 25px;
+  }
 }
 .container-menu {
   background-color: rgba(231, 227, 227, 1);
@@ -159,7 +162,12 @@ header {
   align-items: flex-start;
   max-width: 50%;
   margin: auto;
-  & h2 {
+  &__trait-titre {
+    width: 10%;
+    height: 2px;
+    border: none;
+    background-color: $tertiary-color;
+    margin: 0;
     margin-bottom: 20px;
   }
   &__selection {

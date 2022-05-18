@@ -21,6 +21,16 @@
     max-height: 180px;
     width: 350px;
   }
+  &__nouveau {
+    position: absolute;
+    font-size: 13px;
+    font-weight: bold;
+    color: $tertiary-color-dark;
+    background-color: $tertiary-color;
+    padding: 8px;
+    margin-left: 275px;
+    margin-top: 25px;
+  }
   &__description {
     width: 100%;
     display: flex;
