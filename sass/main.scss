@@ -40,6 +40,11 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  & input {
+    text-decoration: none;
+    border: none;
+    background-color: rgb(231, 228, 228);
+  }
 }
 .container-explore {
   @include titre;
@@ -151,7 +156,9 @@ header {
 .menu {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  max-width: 50%;
+  margin: auto;
   & h2 {
     margin-bottom: 20px;
   }
@@ -163,15 +170,21 @@ header {
   &__card {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-end;
+    max-width: 90%;
+    min-width: 350px;
+    max-height: 50px;
     background-color: rgb(246, 246, 246);
     border: 1px rgb(192, 190, 190);
     margin-bottom: 15px;
     padding: 10px;
     border-radius: $border-radius;
     box-shadow: $box-shadow;
-    &__description {
+    & p {
+      margin-right: 10px;
+    }
+    &__description p {
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
