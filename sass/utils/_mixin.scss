@@ -40,6 +40,9 @@
   margin: auto;
   width: 180px;
   font-size: 15px;
+  &:hover {
+    opacity: 0.5;
+  }
 }
 @mixin img-menu {
   background-position: center;

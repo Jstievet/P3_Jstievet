@@ -200,6 +200,9 @@ header {
   box-shadow: 2px 3px 5px rgb(177, 171, 171);
   margin-bottom: 50px;
 }
+.container-explore__button:hover {
+  opacity: 0.5;
+}
 .container-explore__commander {
   padding-bottom: 25px;
   padding-top: 25px;
@@ -228,7 +231,6 @@ header {
   transition: 0.3s ease-in-out;
 }
 .container-fonctionnement__choice:hover {
-  opacity: 0.5;
   color: #9356dc;
 }
 .container-fonctionnement__choice p {
