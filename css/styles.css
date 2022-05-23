@@ -17,7 +17,7 @@
 .container-restaurants h2 {
   margin-bottom: 20px;
 }
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 769px) and (max-width: 992px) {
   .container-restaurants__group {
     display: flex;
     flex-direction: row;
@@ -144,13 +144,13 @@ a {
 }
 
 .container-global {
-  max-width: 768px;
+  max-width: 769px;
   font-family: "Roboto", sans-serif;
 }
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 769px) and (max-width: 992px) {
   .container-global {
     max-width: 992px;
-    min-width: 768px;
+    min-width: 769px;
   }
 }
 @media (min-width: 992px) {
@@ -244,7 +244,7 @@ header {
 .container-explore__button:hover {
   opacity: 0.5;
 }
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 769px) and (max-width: 992px) {
   .container-explore__button {
     width: 200px;
   }
@@ -381,7 +381,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  max-width: 50%;
+  max-width: 70%;
   margin: auto;
   animation-name: card_hover;
   animation-delay: 0;
@@ -389,6 +389,16 @@ header {
   animation-iteration-count: 1;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .menu {
+    margin-left: 10px;
+  }
+}
+@media (min-width: 992px) {
+  .menu {
+    margin-left: 150px;
+  }
 }
 .menu__trait-titre {
   width: 10%;
@@ -403,17 +413,35 @@ header {
   max-width: fit-content;
   height: fit-content;
 }
+@media (min-width: 769px) and (max-width: 992px) {
+  .menu__selection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-width: 740px;
+  }
+}
+@media (min-width: 992px) {
+  .menu__selection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 80%;
+  }
+}
 .menu__card {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  max-width: 90%;
-  min-width: 350px;
+  min-width: 300px;
+  max-width: 300px;
   max-height: 50px;
   background-color: rgb(246, 246, 246);
   border: 1px rgb(192, 190, 190);
   margin-bottom: 15px;
+  margin-right: 10px;
   padding: 10px;
   border-radius: 20px 20px 20px 20px;
   box-shadow: 2px 3px 5px rgb(177, 171, 171);
@@ -426,6 +454,13 @@ header {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  max-width: 250px;
+}
+.menu__card__description h3 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 270px;
 }
 
 /*# sourceMappingURL=styles.css.map */
