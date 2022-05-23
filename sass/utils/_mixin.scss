@@ -50,11 +50,14 @@
   height: 250px;
   min-width: 400px;
 }
+/* Effet d'apparition des card dans les menus restaurant*/
 @mixin animation {
   animation-name: card_hover;
   animation-delay: 0;
   animation-duration: 5s;
   animation-iteration-count: 1;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 @keyframes card_hover {
   from {
@@ -62,5 +65,16 @@
   }
   to {
     opacity: 1;
+  }
+}
+/*mixin pour la version tablette*/
+@mixin tablette-only {
+  @media (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, tablette)) {
+    @content;
+  }
+}
+@mixin desktop-only {
+  @media (min-width: map-get($breakpoints, tablette)) {
+    @content;
   }
 }

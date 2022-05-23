@@ -4,8 +4,17 @@
 @import "./components/footer";
 @include reset;
 .container-global {
-  max-width: $width-media-portable;
+  max-width: map-get($breakpoints, mobile);
   font-family: "Roboto", sans-serif;
+  @include tablette-only {
+    max-width: map-get($breakpoints, tablette);
+    min-width: map-get($breakpoints, mobile);
+  }
+  @include desktop-only {
+    margin: auto;
+    max-width: map-get($breakpoints, desktop);
+    min-width: map-get($breakpoints, tablette);
+  }
 }
 body {
   margin: 0%;
@@ -55,6 +64,12 @@ header {
     @include button;
     box-shadow: $box-shadow;
     margin-bottom: 50px;
+    @include tablette-only {
+      width: 200px;
+    }
+    @include desktop-only {
+      width: 300px;
+    }
   }
   /*partie qui encadre le bouton commander sur les pages de restaurants*/
   &__commander {
@@ -66,6 +81,14 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include tablette-only {
+  }
+  @include desktop-only {
+    &__group {
+      display: flex;
+      flex-direction: row;
+    }
+  }
   & h2 {
     margin-bottom: 20px;
   }
@@ -79,11 +102,14 @@ header {
     border-radius: $border-radius;
     border: 1px solid rgb(211, 208, 208);
     box-shadow: $box-shadow;
-    opacity: 1;
-    -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
+
     &:hover {
       color: $primary-color;
+    }
+    @include tablette-only {
+    }
+    @include desktop-only {
+      margin-left: 20px;
     }
   }
   &__choice p {

@@ -6,6 +6,24 @@
   & h2 {
     margin-bottom: 20px;
   }
+  @include tablette-only {
+    &__group {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      max-width: 768px;
+    }
+  }
+  @include desktop-only {
+    &__group {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      max-width: 1024px;
+    }
+  }
 }
 .restaurants-card {
   max-width: 350px;

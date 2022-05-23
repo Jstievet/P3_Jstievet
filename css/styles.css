@@ -1,3 +1,4 @@
+/* Effet d'apparition des card dans les menus restaurant*/
 @keyframes card_hover {
   from {
     opacity: 0;
@@ -6,6 +7,7 @@
     opacity: 1;
   }
 }
+/*mixin pour la version tablette*/
 .container-restaurants {
   display: flex;
   flex-direction: column;
@@ -14,6 +16,24 @@
 }
 .container-restaurants h2 {
   margin-bottom: 20px;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .container-restaurants__group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 768px;
+  }
+}
+@media (min-width: 992px) {
+  .container-restaurants__group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1024px;
+  }
 }
 
 .restaurants-card {
@@ -127,6 +147,19 @@ a {
   max-width: 768px;
   font-family: "Roboto", sans-serif;
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  .container-global {
+    max-width: 992px;
+    min-width: 768px;
+  }
+}
+@media (min-width: 992px) {
+  .container-global {
+    margin: auto;
+    max-width: 1440px;
+    min-width: 992px;
+  }
+}
 
 body {
   margin: 0%;
@@ -211,6 +244,16 @@ header {
 .container-explore__button:hover {
   opacity: 0.5;
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  .container-explore__button {
+    width: 200px;
+  }
+}
+@media (min-width: 992px) {
+  .container-explore__button {
+    width: 300px;
+  }
+}
 .container-explore__commander {
   padding-bottom: 25px;
   padding-top: 25px;
@@ -220,6 +263,12 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (min-width: 992px) {
+  .container-fonctionnement__group {
+    display: flex;
+    flex-direction: row;
+  }
 }
 .container-fonctionnement h2 {
   margin-bottom: 20px;
@@ -234,12 +283,14 @@ header {
   border-radius: 20px 20px 20px 20px;
   border: 1px solid rgb(211, 208, 208);
   box-shadow: 2px 3px 5px rgb(177, 171, 171);
-  opacity: 1;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
 }
 .container-fonctionnement__choice:hover {
   color: #9356dc;
+}
+@media (min-width: 992px) {
+  .container-fonctionnement__choice {
+    margin-left: 20px;
+  }
 }
 .container-fonctionnement__choice p {
   padding-left: 25px;
@@ -336,6 +387,8 @@ header {
   animation-delay: 0;
   animation-duration: 5s;
   animation-iteration-count: 1;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .menu__trait-titre {
   width: 10%;
