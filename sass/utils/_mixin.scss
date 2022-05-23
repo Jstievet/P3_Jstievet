@@ -50,3 +50,17 @@
   height: 250px;
   min-width: 400px;
 }
+@mixin animation {
+  animation-name: card_hover;
+  animation-delay: 0;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+@keyframes card_hover {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

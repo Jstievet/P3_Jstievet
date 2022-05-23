@@ -161,6 +161,7 @@ header {
   align-items: flex-start;
   max-width: 50%;
   margin: auto;
+  @include animation;
   &__trait-titre {
     width: 10%;
     height: 2px;
@@ -188,8 +189,10 @@ header {
     padding: 10px;
     border-radius: $border-radius;
     box-shadow: $box-shadow;
+
     & p {
       margin-right: 10px;
+      position: relative;
     }
     &__description p {
       overflow: hidden;
