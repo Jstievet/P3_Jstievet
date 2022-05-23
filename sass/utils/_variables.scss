@@ -1,29 +1,13 @@
-$width-media-portable: 768px;
-$width-media-tablette: 992px;
-$width-media-desktop: 1440px;
 $primary-color: #9356dc;
 $secondary-color: #ff79da;
 $tertiary-color: #99e2d0;
+$tertiary-color-dark: #1191057e;
 $box-shadow: 2px 3px 5px rgb(177, 171, 171);
 $border-radius: 20px 20px 20px 20px;
 $element-box-margin: 10px 50px 10px;
 $margin-footer: 35px;
-@mixin reset {
-  html,
-  body,
-  div,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  a {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    text-decoration: none;
-    color: black;
-  }
-}
+$breakpoints: (
+  mobile: 769px,
+  tablette: 992px,
+  desktop: 1440px,
+);

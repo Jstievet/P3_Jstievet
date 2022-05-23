@@ -4,8 +4,17 @@
 @import "./components/footer";
 @include reset;
 .container-global {
-  max-width: $width-media-portable;
+  max-width: map-get($breakpoints, mobile);
   font-family: "Roboto", sans-serif;
+  @include tablette-only {
+    max-width: map-get($breakpoints, tablette);
+    min-width: map-get($breakpoints, mobile);
+  }
+  @include desktop-only {
+    margin: auto;
+    max-width: map-get($breakpoints, desktop);
+    min-width: map-get($breakpoints, tablette);
+  }
 }
 body {
   margin: 0%;
@@ -40,6 +49,11 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  & input {
+    text-decoration: none;
+    border: none;
+    background-color: rgb(231, 228, 228);
+  }
 }
 .container-explore {
   @include titre;
@@ -50,6 +64,12 @@ header {
     @include button;
     box-shadow: $box-shadow;
     margin-bottom: 50px;
+    @include tablette-only {
+      width: 200px;
+    }
+    @include desktop-only {
+      width: 300px;
+    }
   }
   /*partie qui encadre le bouton commander sur les pages de restaurants*/
   &__commander {
@@ -61,6 +81,14 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include tablette-only {
+  }
+  @include desktop-only {
+    &__group {
+      display: flex;
+      flex-direction: row;
+    }
+  }
   & h2 {
     margin-bottom: 20px;
   }
@@ -74,12 +102,14 @@ header {
     border-radius: $border-radius;
     border: 1px solid rgb(211, 208, 208);
     box-shadow: $box-shadow;
-    opacity: 1;
-    -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
+
     &:hover {
-      opacity: 0.5;
       color: $primary-color;
+    }
+    @include tablette-only {
+    }
+    @include desktop-only {
+      margin-left: 20px;
     }
   }
   &__choice p {
@@ -141,6 +171,9 @@ header {
   margin-bottom: 30px;
   margin-top: -31px;
   padding-top: 25px;
+  & i {
+    font-size: 25px;
+  }
 }
 .container-menu {
   background-color: rgba(231, 227, 227, 1);
@@ -151,30 +184,73 @@ header {
 .menu {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  & h2 {
+  align-items: flex-start;
+  max-width: 70%;
+  margin: auto;
+  @include tablette-only {
+    margin-left: 10px;
+  }
+  @include desktop-only {
+    margin-left: 150px;
+  }
+  @include animation;
+  &__trait-titre {
+    width: 10%;
+    height: 2px;
+    border: none;
+    background-color: $tertiary-color;
+    margin: 0;
     margin-bottom: 20px;
   }
   &__selection {
     min-width: 70%;
     max-width: fit-content;
     height: fit-content;
+    @include tablette-only {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      min-width: 740px;
+    }
+    @include desktop-only {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      min-width: 80%;
+    }
   }
   &__card {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-end;
+    min-width: 300px;
+    max-width: 300px;
+    max-height: 50px;
     background-color: rgb(246, 246, 246);
     border: 1px rgb(192, 190, 190);
     margin-bottom: 15px;
+    margin-right: 10px;
     padding: 10px;
     border-radius: $border-radius;
     box-shadow: $box-shadow;
-    &__description {
+
+    & p {
+      margin-right: 10px;
+      position: relative;
+    }
+    &__description p {
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
+      max-width: 250px;
+    }
+    &__description h3 {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      max-width: 270px;
     }
   }
 }

@@ -1,3 +1,23 @@
+@mixin reset {
+  html,
+  body,
+  div,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    color: black;
+  }
+}
+
 @mixin titre {
   font-size: 20px;
   display: flex;
@@ -12,7 +32,7 @@
   color: white;
   cursor: pointer;
   border: none;
-  background: linear-gradient(to left, $primary-color, $secondary-color);
+  background: linear-gradient(to left top, $primary-color, $secondary-color);
   border-radius: $border-radius;
   padding: 15px;
   display: flex;
@@ -20,10 +40,41 @@
   margin: auto;
   width: 180px;
   font-size: 15px;
+  &:hover {
+    opacity: 0.5;
+  }
 }
 @mixin img-menu {
   background-position: center;
   background-size: cover;
   height: 250px;
   min-width: 400px;
+}
+/* Effet d'apparition des card dans les menus restaurant*/
+@mixin animation {
+  animation-name: card_hover;
+  animation-delay: 0;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+@keyframes card_hover {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*mixin pour la version tablette*/
+@mixin tablette-only {
+  @media (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, tablette)) {
+    @content;
+  }
+}
+@mixin desktop-only {
+  @media (min-width: map-get($breakpoints, tablette)) {
+    @content;
+  }
 }
