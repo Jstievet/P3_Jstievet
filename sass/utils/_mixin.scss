@@ -40,6 +40,7 @@
   margin: auto;
   width: 180px;
   font-size: 15px;
+  animation-delay: 8000ms;
   &:hover {
     opacity: 0.5;
   }
@@ -53,10 +54,8 @@
 /* Effet d'apparition des card dans les menus restaurant*/
 @mixin animation {
   animation-name: card_hover;
-  animation-delay: 0;
   animation-duration: 5s;
   animation-iteration-count: 1;
-  -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
 @keyframes card_hover {
