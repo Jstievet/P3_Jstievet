@@ -472,7 +472,7 @@ header {
   animation-name: card_hover;
   animation-duration: 5s;
   animation-iteration-count: 1;
-  transition: 0.3s ease-in-out;
+  transition: 0.5s linear;
 }
 @media (min-width: 769px) and (max-width: 992px) {
   .menu {
@@ -521,9 +521,6 @@ header {
   align-items: baseline;
   width: 90%;
   height: 55px;
-  /*min-width: 300px;
-  max-width: 300px;
-  max-height: 50px;*/
   background-color: rgb(246, 246, 246);
   border: 1px rgb(192, 190, 190);
   margin-bottom: 15px;
@@ -561,6 +558,9 @@ header {
   transition-delay: 1s;
   transition-duration: 1s;
   transform-origin: 50% 50%;
+}
+.menu__card__description__price {
+  margin-right: 10px;
 }
 .menu__card__description {
   display: flex;
