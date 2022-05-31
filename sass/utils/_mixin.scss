@@ -55,7 +55,6 @@
 @mixin animation {
   animation-name: card_hover;
   animation-duration: 5s;
-  animation-iteration-count: 1;
   transition: 0.5s linear;
 }
 @keyframes card_hover {
