@@ -507,7 +507,7 @@ header {
   }
 }
 .menu__trait-titre {
-  width: 10%;
+  width: 40px;
   height: 2px;
   border: none;
   background-color: #99e2d0;
