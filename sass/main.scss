@@ -300,7 +300,7 @@ header {
     box-shadow: $box-shadow;
     &:hover {
       .menu__card__check {
-        transition: all 1000ms;
+        transition: all 2000ms;
         width: 10%;
         height: 100%;
         padding: 0;
@@ -310,7 +310,7 @@ header {
         }
       }
       .menu__card__description__container {
-        transition: all 1000ms;
+        transition: all 2000ms;
         width: 90%;
       }
     }

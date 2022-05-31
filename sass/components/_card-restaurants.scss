@@ -70,6 +70,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 15px;
     & h3 {
       margin: 10px;
       margin-left: 15px;
@@ -87,15 +88,38 @@
     object-fit: cover;
     border-radius: 20px 20px 0 0;
   }
-  &__heart {
+  &__container {
     font-size: 20px;
-    margin: 15px;
+    cursor: pointer;
+    &__heart {
+      z-index: 1;
+      position: absolute !important;
+
+      &__full {
+        opacity: 0;
+        z-index: 2;
+        color: $primary-color;
+      }
+    }
     &:hover {
-      color: $primary-color;
-      cursor: pointer;
+      .restaurants-card__container__heart__full {
+        animation: heart 4s linear;
+        animation-fill-mode: forwards;
+      }
     }
-    &:focus {
-      background-color: black;
-    }
+  }
+}
+@keyframes heart {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
   }
 }
