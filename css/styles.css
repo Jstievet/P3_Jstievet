@@ -121,7 +121,7 @@
   color: #9356dc;
 }
 .restaurants-card__container:hover .restaurants-card__container__heart__full {
-  animation: heart 4s linear;
+  animation: heart 3s linear;
   animation-fill-mode: forwards;
 }
 
@@ -228,22 +228,22 @@ body {
 .loader {
   border-radius: 50px;
   border: 2px solid rgba(255, 255, 255, 0.4);
-  position: relative;
-  margin-left: 47%;
+  position: absolute;
+  transform: translate(-50% -50%);
+  top: 40%;
+  left: 45%;
 }
 
 .loader:after {
   content: "";
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   border: 6px solid #9356dc;
   border-radius: 50%;
   border-top-color: #ff79da;
   border-bottom-color: #9356dc;
   border-left-color: #99e2d0;
   position: absolute;
-  top: 50%;
-  left: 50%;
   transform: rotate(0deg);
   animation: spin 4s linear;
 }
@@ -251,10 +251,10 @@ body {
 @keyframes spin {
   0% {
     transform: rotate(0deg);
-    opacity: 0.2;
+    opacity: 1;
   }
   100% {
-    transform: rotate(1960deg);
+    transform: rotate(960deg);
   }
 }
 @keyframes hover {
@@ -433,35 +433,31 @@ header {
 }
 
 .main-photo {
-  width: 100%;
+  max-width: 100%;
 }
 .main-photo__alafrancaise {
   background-image: url(../images/restaurants/toa-heftiba.jpg);
   background-position: center;
   background-size: cover;
   height: 250px;
-  min-width: 400px;
 }
 .main-photo__lanoteenchantee {
   background-image: url(../images/restaurants/stil.jpg);
   background-position: center;
   background-size: cover;
   height: 250px;
-  min-width: 400px;
 }
 .main-photo__lapalettedugout {
   background-image: url(../images/restaurants/jay-wennington.jpg);
   background-position: center;
   background-size: cover;
   height: 250px;
-  min-width: 400px;
 }
 .main-photo__ledelicedessens {
   background-image: url(../images/restaurants/louis-hansel-shotsoflouis.jpg);
   background-position: center;
   background-size: cover;
   height: 250px;
-  min-width: 400px;
 }
 
 .main-titre {
@@ -481,14 +477,18 @@ header {
   background-color: rgb(231, 227, 227);
   height: 100%;
   border-radius: 40px 40px 0 0;
-  min-width: 400px;
+  min-width: 100%;
+}
+
+.menu_container {
+  padding: 0 25px;
 }
 
 .menu {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 100%;
+  width: 90%;
   margin: auto;
   animation-name: card_hover;
   animation-duration: 5s;
@@ -496,7 +496,6 @@ header {
 }
 @media (min-width: 769px) and (max-width: 992px) {
   .menu {
-    margin-left: 10px;
     max-width: 70%;
   }
 }
@@ -546,27 +545,37 @@ header {
   margin-bottom: 15px;
   border-radius: 20px 20px 20px 20px;
   box-shadow: 2px 3px 5px rgb(177, 171, 171);
+  align-items: stretch;
+}
+.menu__card:hover {
+  position: relative;
+}
+.menu__card:hover__check p {
+  top: 50%;
+  left: 50%;
 }
 .menu__card:hover .menu__card__check {
   transition: all 2000ms;
+  top: 50%;
+  left: 50%;
   width: 10%;
-  height: 100%;
   padding: 0;
   font-size: 20px;
 }
 .menu__card:hover .menu__card__check i {
   transform: rotate(720deg);
+  position: relative;
+  top: 35%;
 }
 .menu__card:hover .menu__card__description__container {
   transition: all 2000ms;
-  width: 90%;
+  width: 80%;
 }
 .menu__card__check {
   width: 0;
   font-size: 0;
-  height: 100%;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   background: #99e2d0;
   border-radius: 0 20px 20px 0;
@@ -590,11 +599,19 @@ header {
 .menu__card__description {
   display: flex;
   justify-content: space-between;
-  margin-left: 15px;
+  align-items: center;
   width: 100%;
   transition: all 1000ms;
 }
+.menu__card__description__container {
+  width: 80%;
+  padding-left: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 .menu__card__description__detail {
+  max-width: 80%;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -603,10 +620,10 @@ header {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  max-width: 80%;
 }
 .menu__card__description__price {
   width: 20%;
-  margin-top: auto;
   text-align: right;
   transition: all 1000ms;
 }

@@ -88,9 +88,11 @@
     object-fit: cover;
     border-radius: 20px 20px 0 0;
   }
+  //conteneur des icones coeurs//
   &__container {
     font-size: 20px;
     cursor: pointer;
+    // on définie ici les caractéristique des icones coeur //
     &__heart {
       z-index: 1;
       position: absolute !important;
@@ -103,12 +105,13 @@
     }
     &:hover {
       .restaurants-card__container__heart__full {
-        animation: heart 4s linear;
+        animation: heart 3s linear;
         animation-fill-mode: forwards;
       }
     }
   }
 }
+//animation du coeur appararition du coeur plein //
 @keyframes heart {
   0% {
     opacity: 0;
