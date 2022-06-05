@@ -160,11 +160,13 @@
   justify-content: space-between;
   padding-bottom: 25px;
   margin-left: 35px;
+  color: white;
 }
 .footer__text p,
 .footer__text div,
 .footer__text a {
   margin-bottom: 5px;
+  color: white;
 }
 .footer__contact a {
   text-decoration: none;
@@ -344,12 +346,13 @@ header {
   margin: auto;
   width: 180px;
   font-size: 15px;
-  animation-delay: 8000ms;
+  transition-duration: 2ms;
   box-shadow: 2px 3px 5px rgb(177, 171, 171);
   margin-bottom: 50px;
 }
 .container-explore__button:hover {
   opacity: 0.5;
+  box-shadow: 3px 9px 9px rgb(177, 171, 171);
 }
 @media (min-width: 769px) and (max-width: 992px) {
   .container-explore__button {
@@ -465,8 +468,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  margin-bottom: 30px;
-  margin-top: -31px;
+  padding-bottom: 15px;
   padding-top: 25px;
 }
 .main-titre i {
@@ -475,9 +477,9 @@ header {
 
 .container-menu {
   background-color: rgb(231, 227, 227);
-  height: 100%;
   border-radius: 40px 40px 0 0;
-  min-width: 100%;
+  transform: translateY(-27px);
+  margin-bottom: -27px;
 }
 
 .menu_container {
@@ -537,7 +539,6 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: baseline;
   width: 90%;
   height: 55px;
   background-color: rgb(246, 246, 246);
@@ -563,13 +564,13 @@ header {
   font-size: 20px;
 }
 .menu__card:hover .menu__card__check i {
-  transform: rotate(720deg);
+  transform: rotate(1080deg);
   position: relative;
   top: 35%;
 }
-.menu__card:hover .menu__card__description__container {
-  transition: all 2000ms;
-  width: 80%;
+.menu__card:hover .menu__card__description {
+  transition: all 4000ms;
+  width: 90%;
 }
 .menu__card__check {
   width: 0;

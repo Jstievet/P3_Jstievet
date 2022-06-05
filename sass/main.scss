@@ -233,19 +233,20 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  margin-bottom: 30px;
-  margin-top: -31px;
+  padding-bottom: 15px;
   padding-top: 25px;
   & i {
     font-size: 25px;
   }
 }
+//section qui contient l'ensemble du main //
 .container-menu {
   background-color: rgba(231, 227, 227, 1);
-  height: 100%;
   border-radius: 40px 40px 0 0;
-  min-width: 100%;
+  transform: translateY(-27px);
+  margin-bottom: -27px;
 }
+//menu container contient tout les type de plat ainsi que les plats//
 .menu_container {
   padding: 0 25px;
 }
@@ -293,7 +294,6 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: baseline;
     width: 90%;
     height: 55px;
     background-color: rgb(246, 246, 246);
@@ -317,14 +317,14 @@ header {
         font-size: 20px;
 
         & i {
-          transform: rotate(720deg);
+          transform: rotate(1080deg);
           position: relative;
           top: 35%;
         }
       }
-      .menu__card__description__container {
-        transition: all 2000ms;
-        width: 80%;
+      .menu__card__description {
+        transition: all 4000ms;
+        width: 90%;
       }
     }
     &__check {
