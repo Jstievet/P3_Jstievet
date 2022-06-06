@@ -344,26 +344,19 @@ header {
   display: flex;
   justify-content: center;
   margin: auto;
-  width: 180px;
+  width: 100%;
   font-size: 15px;
   box-shadow: 2px 3px 5px rgb(177, 171, 171);
   margin-bottom: 50px;
+  width: 100%;
 }
 .container-explore__button:hover {
   opacity: 0.5;
   box-shadow: 3px 9px 9px rgb(177, 171, 171);
 }
-@media (min-width: 769px) and (max-width: 992px) {
-  .container-explore__button {
-    width: 200px;
-  }
-}
-@media (min-width: 992px) {
-  .container-explore__button {
-    width: 300px;
-  }
-}
 .container-explore__commander {
+  margin: auto;
+  width: 25%;
   padding-bottom: 25px;
   padding-top: 25px;
 }

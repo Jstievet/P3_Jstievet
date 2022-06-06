@@ -129,15 +129,12 @@ header {
     @include button;
     box-shadow: $box-shadow;
     margin-bottom: 50px;
-    @include tablette-only {
-      width: 200px;
-    }
-    @include desktop-only {
-      width: 300px;
-    }
+    width: 100%;
   }
   /*partie qui encadre le bouton commander sur les pages de restaurants*/
   &__commander {
+    margin: auto;
+    width: 25%;
     padding-bottom: 25px;
     padding-top: 25px;
   }
