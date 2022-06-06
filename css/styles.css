@@ -346,7 +346,6 @@ header {
   margin: auto;
   width: 180px;
   font-size: 15px;
-  transition-duration: 2ms;
   box-shadow: 2px 3px 5px rgb(177, 171, 171);
   margin-bottom: 50px;
 }
