@@ -42,22 +42,19 @@
   font-size: 15px;
   &:hover {
     opacity: 0.5;
+    box-shadow: 3px 9px 9px rgba(177, 171, 171, 1);
   }
 }
 @mixin img-menu {
   background-position: center;
   background-size: cover;
   height: 250px;
-  min-width: 400px;
 }
 /* Effet d'apparition des card dans les menus restaurant*/
 @mixin animation {
   animation-name: card_hover;
-  animation-delay: 0;
   animation-duration: 5s;
-  animation-iteration-count: 1;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  transition: 0.5s linear;
 }
 @keyframes card_hover {
   from {

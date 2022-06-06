@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -18,18 +18,21 @@
     ></script>
   </head>
   <body>
-    <header>
-      <img class="header-logo" src="./images/logo/ohmyfood.png" />
+    <div class="loader-container">
+      <div class="loader"></div>
+    </div>
+    <header class="header">
+      <img class="header-logo" src="./images/logo/ohmyfood.png" alt="Logo" />
       <div class="header-container-search">
         <form>
           <i class="fa-solid fa-location-dot"
-            ><input type="text" value="&nbsp Paris,Belleville" />
+            ><input type="text" value=" Paris,Belleville" />
           </i>
         </form>
       </div>
     </header>
     <div class="container-global">
-      <main>
+      <main class="main">
         <div class="container-explore">
           <div class="container-explore__text">
             <h2>Réservez le menu qui vous convient</h2>
@@ -70,7 +73,10 @@
               <div class="restaurants-card__cadre">
                 <p class="restaurants-card__nouveau">Nouveau</p>
                 <a href="./html/menulapalettedugout.html">
-                  <img src="./images/restaurants/jay-wennington.jpg" />
+                  <img
+                    src="./images/restaurants/jay-wennington.jpg"
+                    alt="La palette du gout"
+                  />
                 </a>
               </div>
               <div class="restaurants-card__description">
@@ -79,10 +85,12 @@
                   <p>Ménilmontant</p>
                 </div>
 
-                <div class="restaurants-card__heart">
+                <div class="restaurants-card__container fa-stack">
                   <i
-                    class="fa-regular fa-heart"
-                    class="restaurants-card__heart"
+                    class="fa-regular fa-heart fa-stack restaurants-card__container__heart"
+                  ></i>
+                  <i
+                    class="fa-solid fa-heart fa-stack restaurants-card__container__heart__full"
                   ></i>
                 </div>
               </div>
@@ -92,7 +100,10 @@
               <div class="restaurants-card__cadre">
                 <p class="restaurants-card__nouveau">Nouveau</p>
                 <a href="./html/menulanoteenchantee.html">
-                  <img src="./images/restaurants/stil.jpg" />
+                  <img
+                    src="./images/restaurants/stil.jpg"
+                    alt="Menu la note enchantee"
+                  />
                 </a>
               </div>
               <div class="restaurants-card__description">
@@ -100,15 +111,24 @@
                   <h3>la note enchantée</h3>
                   <p>Charonne</p>
                 </div>
-                <div class="restaurants-card__heart">
-                  <i class="fa-regular fa-heart"></i>
+                <div class="restaurants-card__container fa-stack">
+                  <i
+                    class="fa-regular fa-heart fa-stack restaurants-card__container__heart"
+                  ></i>
+                  <i
+                    class="fa-solid fa-heart fa-stack restaurants-card__container__heart__full"
+                  ></i>
                 </div>
               </div>
             </div>
+
             <div class="restaurants-card">
               <div class="restaurants-card__cadre">
                 <a href="./html/menualafrancaise.html">
-                  <img src="./images/restaurants/toa-heftiba.jpg" />
+                  <img
+                    src="./images/restaurants/toa-heftiba.jpg"
+                    alt="Menu à la française"
+                  />
                 </a>
               </div>
               <div class="restaurants-card__description">
@@ -116,16 +136,22 @@
                   <h3>à la française</h3>
                   <p>Cité Rouge</p>
                 </div>
-                <div class="restaurants-card__heart">
-                  <i class="fa-regular fa-heart"></i>
+                <div class="restaurants-card__container fa-stack">
+                  <i
+                    class="fa-regular fa-heart fa-stack restaurants-card__container__heart"
+                  ></i>
+                  <i
+                    class="fa-solid fa-heart fa-stack restaurants-card__container__heart__full"
+                  ></i>
                 </div>
               </div>
             </div>
             <div class="restaurants-card">
               <div class="restaurants-card__cadre">
-                <a href="./html/menuledelicedessens.html">
+                <a href="./html/menudelicedessens.html">
                   <img
                     src="./images/restaurants/louis-hansel-shotsoflouis.jpg"
+                    alt="Menu delice des sens"
                   />
                 </a>
               </div>
@@ -134,8 +160,13 @@
                   <h3>le délice des sens</h3>
                   <p>Folie-Méricourt</p>
                 </div>
-                <div class="restaurants-card__heart">
-                  <i class="fa-regular fa-heart"></i>
+                <div class="restaurants-card__container fa-stack">
+                  <i
+                    class="fa-regular fa-heart fa-stack restaurants-card__container__heart"
+                  ></i>
+                  <i
+                    class="fa-solid fa-heart fa-stack restaurants-card__container__heart__full"
+                  ></i>
                 </div>
               </div>
             </div>
@@ -145,7 +176,7 @@
     </div>
     <footer class="footer">
       <div class="footer__logo">
-        <img src="./images/logo/ohmyfood.png" />
+        <img src="./images/logo/ohmyfood.png" alt="Logo" />
       </div>
       <div class="footer__text">
         <div><i class="fa-solid fa-utensils"></i> Proposer un restaurant</div>

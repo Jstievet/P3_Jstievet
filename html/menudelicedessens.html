@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
     <title>Le délice des sens</title>
     <script
       src="https://kit.fontawesome.com/5b4a2d0a3d.js"
@@ -31,7 +31,14 @@
         <div class="container-menu">
           <div class="main-titre">
             <h1>Le délice des sens</h1>
-            <i class="fa-regular fa-heart"></i>
+            <div class="restaurants-card__container fa-stack">
+              <i
+                class="fa-regular fa-heart fa-stack restaurants-card__container__heart"
+              ></i>
+              <i
+                class="fa-solid fa-heart fa-stack restaurants-card__container__heart__full"
+              ></i>
+            </div>
           </div>
           <section class="menu">
             <h2>Entrées</h2>
@@ -39,24 +46,49 @@
             <div class="menu__selection">
               <div class="menu__card">
                 <div class="menu__card__description">
-                  <h3>Tartare de thon</h3>
-                  <p>Assaisonné au yuzu</p>
+                  <div class="menu__card__description__container">
+                    <h3 class="menu__card__description__title">
+                      Tartare de thon
+                    </h3>
+                    <p class="menu__card__description__detail">
+                      Assaisonné au yuzu
+                    </p>
+                  </div>
+                  <div class="menu__card__description__price">25€</div>
                 </div>
-                <p>25€</p>
+                <div class="menu__card__check">
+                  <p><i class="fa-regular fa-circle-check"></i></p>
+                </div>
               </div>
               <div class="menu__card">
                 <div class="menu__card__description">
-                  <h3>Bouchée de homard croustillant</h3>
-                  <p>Et sa farandole de petits légumes</p>
+                  <div class="menu__card__description__container">
+                    <h3 class="menu__card__description__title">
+                      Bouchée de homard croustillant
+                    </h3>
+                    <p class="menu__card__description__detail">
+                      Et sa farandole de petits légumes
+                    </p>
+                  </div>
+                  <div class="menu__card__description__price">35€</div>
                 </div>
-                <p>35€</p>
+                <div class="menu__card__check">
+                  <p><i class="fa-regular fa-circle-check"></i></p>
+                </div>
               </div>
               <div class="menu__card">
                 <div class="menu__card__description">
-                  <h3>Velouté de cèpes</h3>
-                  <p>Aux truffes</p>
+                  <div class="menu__card__description__container">
+                    <h3 class="menu__card__description__title">
+                      Velouté de cèpes
+                    </h3>
+                    <p class="menu__card__description__detail">Aux truffes</p>
+                  </div>
+                  <div class="menu__card__description__price">20€</div>
                 </div>
-                <p>20€</p>
+                <div class="menu__card__check">
+                  <p><i class="fa-regular fa-circle-check"></i></p>
+                </div>
               </div>
             </div>
           </section>
@@ -66,24 +98,51 @@
             <div class="menu__selection">
               <div class="menu__card">
                 <div class="menu__card__description">
-                  <h3>Poulet rôti aux herbes de Provence</h3>
-                  <p>Et sa crème de truffe</p>
+                  <div class="menu__card__description__container">
+                    <h3 class="menu__card__description__title">
+                      Poulet röti aux herbes de Provence
+                    </h3>
+                    <p class="menu__card__description__detail">
+                      Et sa crème de truffe
+                    </p>
+                  </div>
+                  <div class="menu__card__description__price">40€</div>
                 </div>
-                <p>40€</p>
+                <div class="menu__card__check">
+                  <p><i class="fa-regular fa-circle-check"></i></p>
+                </div>
               </div>
               <div class="menu__card">
                 <div class="menu__card__description">
-                  <h3>Langouste rôtie</h3>
-                  <p>Et ses légumes de saison</p>
+                  <div class="menu__card__description__container">
+                    <h3 class="menu__card__description__title">
+                      Langouste rötie
+                    </h3>
+                    <p class="menu__card__description__detail">
+                      Et ses légumes de saison
+                    </p>
+                  </div>
+                  <div class="menu__card__description__price">35€</div>
                 </div>
-                <p>35€</p>
+                <div class="menu__card__check">
+                  <p><i class="fa-regular fa-circle-check"></i></p>
+                </div>
               </div>
               <div class="menu__card">
                 <div class="menu__card__description">
-                  <h3>Côte de boeuf Angus</h3>
-                  <p>Et sa purée de panais</p>
+                  <div class="menu__card__description__container">
+                    <h3 class="menu__card__description__title">
+                      Cöte de boeuf Angus
+                    </h3>
+                    <p class="menu__card__description__detail">
+                      Et sa purée de panais
+                    </p>
+                  </div>
+                  <div class="menu__card__description__price">44€</div>
                 </div>
-                <p>44€</p>
+                <div class="menu__card__check">
+                  <p><i class="fa-regular fa-circle-check"></i></p>
+                </div>
               </div>
             </div>
           </section>
@@ -93,24 +152,41 @@
             <div class="menu__selection">
               <div class="menu__card">
                 <div class="menu__card__description">
-                  <h3>Farandole de desserts</h3>
-                  <p>Du chef</p>
+                  <div class="menu__card__description__container">
+                    <h3 class="menu__card__description__title">
+                      Farandole de Desserts
+                    </h3>
+                    <p class="menu__card__description__detail">Du chef</p>
+                  </div>
+                  <div class="menu__card__description__price">18€</div>
                 </div>
-                <p>18€</p>
+                <div class="menu__card__check">
+                  <p><i class="fa-regular fa-circle-check"></i></p>
+                </div>
               </div>
               <div class="menu__card">
                 <div class="menu__card__description">
-                  <h3>Crème brulée</h3>
-                  <p>Revisitée</p>
+                  <div class="menu__card__description__container">
+                    <h3 class="menu__card__description__title">Crème brulée</h3>
+                    <p class="menu__card__description__detail">Revisitée</p>
+                  </div>
+                  <div class="menu__card__description__price">22€</div>
                 </div>
-                <p>22€</p>
+                <div class="menu__card__check">
+                  <p><i class="fa-regular fa-circle-check"></i></p>
+                </div>
               </div>
               <div class="menu__card">
                 <div class="menu__card__description">
-                  <h3>Tiramisu</h3>
-                  <p>À la noisette</p>
+                  <div class="menu__card__description__container">
+                    <h3 class="menu__card__description__title">Tiramisu</h3>
+                    <p class="menu__card__description__detail">À la noisette</p>
+                  </div>
+                  <div class="menu__card__description__price">23€</div>
                 </div>
-                <p>23€</p>
+                <div class="menu__card__check">
+                  <p><i class="fa-regular fa-circle-check"></i></p>
+                </div>
               </div>
             </div>
           </section>
