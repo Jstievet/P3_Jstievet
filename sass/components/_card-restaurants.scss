@@ -102,14 +102,13 @@
         opacity: 0;
         z-index: 2;
         color: $primary-color;
-        transition: all 3s;
       }
     }
     &:hover {
       .restaurants-card__container__heart__full {
-        animation: heart 1s linear;
+        animation: heart 2s linear;
         animation-fill-mode: forwards;
-        transition: all 3s;
+        transition: all 1ms;
       }
     }
   }

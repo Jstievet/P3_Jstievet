@@ -133,7 +133,6 @@ header {
     @include button;
     box-shadow: $box-shadow;
     margin-bottom: 50px;
-    width: 100%;
   }
   /*partie qui encadre le bouton commander sur les pages de restaurants*/
   &__commander {
@@ -242,7 +241,7 @@ header {
 .container-menu {
   background-color: rgba(231, 227, 227, 1);
   border-radius: 40px 40px 0 0;
-  transform: translateY(-27px);
+  transform: translateY(-30px);
   margin-bottom: -27px;
 
   @include desktop-only {
@@ -352,6 +351,8 @@ header {
       justify-content: center;
       background: $tertiary-color;
       border-radius: 0 20px 20px 0;
+      transition: all 1s;
+
       & i {
         display: flex;
         justify-content: center;
