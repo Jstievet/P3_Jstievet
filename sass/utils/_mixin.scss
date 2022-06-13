@@ -52,9 +52,9 @@
   background-size: cover;
   height: 250px;
 }
-/* Effet d'apparition des card dans les menus restaurant*/
+/* Effet d'apparition des cards dans les menus restaurant*/
 @mixin animation {
-  .menu_container:first-child {
+  .menu_container:nth-child(1) {
     animation-name: card_hover;
     animation-duration: 5s;
     transition: 0.5s linear;

@@ -56,13 +56,12 @@
     color: $tertiary-color-dark;
     background-color: $tertiary-color;
     padding: 8px;
+    top: 25px;
+    right: 30px;
 
-    margin-top: 1rem;
     @include tablette-only {
-      margin-left: 70%;
     }
     @include desktop-only {
-      margin-left: 70%;
     }
   }
   &__description {
