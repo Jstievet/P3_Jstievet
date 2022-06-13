@@ -58,11 +58,6 @@
     padding: 8px;
     top: 25px;
     right: 30px;
-
-    @include tablette-only {
-    }
-    @include desktop-only {
-    }
   }
   &__description {
     width: 100%;
@@ -91,7 +86,7 @@
   &__container {
     font-size: 20px;
     cursor: pointer;
-
+    transition: all 1s;
     // on définie ici les caractéristique des icones coeur //
     &__heart {
       z-index: 1;
@@ -105,9 +100,9 @@
     }
     &:hover {
       .restaurants-card__container__heart__full {
-        animation: heart 2s linear;
+        animation: heart 1s linear;
         animation-fill-mode: forwards;
-        transition: all 1ms;
+        transition: all 1s;
       }
     }
   }
