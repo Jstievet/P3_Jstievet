@@ -233,8 +233,15 @@ header {
   justify-content: space-around;
   padding-bottom: 15px;
   padding-top: 25px;
+  font-size: 11px;
   & i {
     font-size: 25px;
+  }
+  @include tablette-only {
+    font-size: 20px;
+  }
+  @include desktop-only {
+    font-size: 20px;
   }
 }
 //section qui contient l'ensemble du main //
@@ -352,7 +359,6 @@ header {
       background: $tertiary-color;
       border-radius: 0 20px 20px 0;
       transition: all 1s;
-
       & i {
         display: flex;
         justify-content: center;
@@ -360,9 +366,7 @@ header {
         color: $tertiary-color;
         background-color: white;
         border-radius: 50px;
-        transition-duration: 0.8s;
         transition-property: transform;
-        transition-delay: 0s;
         transition-duration: 1s;
         transform-origin: 60% 65%;
       }
