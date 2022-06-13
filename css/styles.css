@@ -118,16 +118,10 @@
 }
 
 @keyframes heart {
-  0% {
+  from {
     opacity: 0;
   }
-  25% {
-    opacity: 0.2;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
+  to {
     opacity: 1;
   }
 }
