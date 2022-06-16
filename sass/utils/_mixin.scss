@@ -52,24 +52,28 @@
   background-size: cover;
   height: 250px;
 }
+
 /* Effet d'apparition des cards dans les menus restaurant*/
 @mixin animation {
-  .menu_container:nth-child(1) {
+  .menu_container .menu:nth-child(1) .menu__selection {
     animation-name: card_hover;
     animation-duration: 5s;
     transition: 0.5s linear;
+    animation-fill-mode: forwards;
   }
-  .menu_container:nth-child(2) {
+  .menu_container .menu:nth-child(2) .menu__selection {
     animation-delay: 1s;
     animation-name: card_hover;
     animation-duration: 5s;
     transition: 0.5s linear;
+    animation-fill-mode: forwards;
   }
-  .menu_container:nth-child(3) {
+  .menu_container .menu:nth-child(3) .menu__selection {
     animation-delay: 2s;
     animation-name: card_hover;
     animation-duration: 5s;
     transition: 0.5s linear;
+    animation-fill-mode: forwards;
   }
 }
 @keyframes card_hover {
