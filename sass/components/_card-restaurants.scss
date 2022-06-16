@@ -100,22 +100,11 @@
         transition: all 1s;
       }
     }
+    //ici l'on fait apparaitre le coeur plein sans animation pour permettre un retour de celle-ci à la sortie du hover
     &:hover {
       .restaurants-card__container__heart__full {
-        // animation: heart 1s linear;
-        // animation-fill-mode: forwards;
-        // transition: all 1s;
         opacity: 1;
       }
     }
   }
 }
-//animation du coeur appararition du coeur plein //
-// @keyframes heart {
-//   from {
-//     opacity: 0;
-//   }
-//   to {
-//     opacity: 1;
-//   }
-// }
