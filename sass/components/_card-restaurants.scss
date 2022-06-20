@@ -56,14 +56,8 @@
     color: $tertiary-color-dark;
     background-color: $tertiary-color;
     padding: 8px;
-    margin-left: 70%;
-    margin-top: 1rem;
-    @include tablette-only {
-      margin-left: 70%;
-    }
-    @include desktop-only {
-      margin-left: 70%;
-    }
+    top: 25px;
+    right: 30px;
   }
   &__description {
     width: 100%;
@@ -92,37 +86,25 @@
   &__container {
     font-size: 20px;
     cursor: pointer;
+
     // on définie ici les caractéristique des icones coeur //
     &__heart {
       z-index: 1;
       position: absolute !important;
+      transition: all 1s;
 
       &__full {
         opacity: 0;
         z-index: 2;
         color: $primary-color;
+        transition: all 1s;
       }
     }
+    //ici l'on fait apparaitre le coeur plein sans animation pour permettre un retour de celle-ci à la sortie du hover
     &:hover {
       .restaurants-card__container__heart__full {
-        animation: heart 3s linear;
-        animation-fill-mode: forwards;
+        opacity: 1;
       }
     }
-  }
-}
-//animation du coeur appararition du coeur plein //
-@keyframes heart {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0.2;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
   }
 }

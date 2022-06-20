@@ -38,11 +38,13 @@
   display: flex;
   justify-content: center;
   margin: auto;
-  width: 180px;
+  width: 100%;
   font-size: 15px;
+  transition: all 2s;
   &:hover {
     opacity: 0.5;
     box-shadow: 3px 9px 9px rgba(177, 171, 171, 1);
+    transition: all 2s;
   }
 }
 @mixin img-menu {
@@ -50,11 +52,29 @@
   background-size: cover;
   height: 250px;
 }
-/* Effet d'apparition des card dans les menus restaurant*/
+
+/* Effet d'apparition des cards dans les menus restaurant*/
 @mixin animation {
-  animation-name: card_hover;
-  animation-duration: 5s;
-  transition: 0.5s linear;
+  .menu_container .menu:nth-child(1) .menu__selection {
+    animation-name: card_hover;
+    animation-duration: 5s;
+    transition: 0.5s linear;
+    animation-fill-mode: forwards;
+  }
+  .menu_container .menu:nth-child(2) .menu__selection {
+    animation-delay: 1s;
+    animation-name: card_hover;
+    animation-duration: 5s;
+    transition: 0.5s linear;
+    animation-fill-mode: forwards;
+  }
+  .menu_container .menu:nth-child(3) .menu__selection {
+    animation-delay: 2s;
+    animation-name: card_hover;
+    animation-duration: 5s;
+    transition: 0.5s linear;
+    animation-fill-mode: forwards;
+  }
 }
 @keyframes card_hover {
   from {
