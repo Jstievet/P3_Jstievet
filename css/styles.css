@@ -512,14 +512,10 @@ header {
 }
 
 .menu {
-  display: flex;
-  flex-direction: column;
   align-items: flex-start;
   width: 90%;
   margin: auto;
-}
-.menu h2 {
-  transform: translateX(10%);
+  margin-top: 30px;
 }
 @media (min-width: 769px) and (max-width: 992px) {
   .menu {
@@ -528,7 +524,6 @@ header {
 }
 @media (min-width: 992px) {
   .menu {
-    max-width: 700px;
     max-width: 33%;
   }
 }
@@ -539,7 +534,6 @@ header {
   background-color: #99e2d0;
   margin: 0;
   margin-bottom: 20px;
-  transform: translateX(25%);
 }
 .menu__selection {
   width: 100%;
@@ -574,6 +568,7 @@ header {
   border-radius: 20px 20px 20px 20px;
   box-shadow: 2px 3px 5px rgb(177, 171, 171);
   align-items: stretch;
+  overflow: hidden;
 }
 .menu__card:hover {
   position: relative;

@@ -271,20 +271,15 @@ header {
 }
 @include animation;
 .menu {
-  display: flex;
-  flex-direction: column;
   align-items: flex-start;
   width: 90%;
   margin: auto;
-  & h2 {
-    transform: translateX(10%);
-  }
+  margin-top: 30px;
 
   @include tablette-only {
     max-width: 70%;
   }
   @include desktop-only {
-    max-width: 700px;
     max-width: 33%;
   }
 
@@ -295,7 +290,6 @@ header {
     background-color: $tertiary-color;
     margin: 0;
     margin-bottom: 20px;
-    transform: translateX(25%);
   }
   &__selection {
     width: 100%;
@@ -326,6 +320,8 @@ header {
     border-radius: $border-radius;
     box-shadow: $box-shadow;
     align-items: stretch;
+    overflow: hidden;
+
     &:hover {
       position: relative;
       &__check p {
