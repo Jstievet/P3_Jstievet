@@ -188,8 +188,7 @@ a {
 body {
   margin: 0%;
 }
-body h1,
-body h2 {
+body h1 {
   font-family: "Shrikhand", cursive;
 }
 
@@ -258,21 +257,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.header-restaurant {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-.header-restaurant i {
-  margin-right: 10px;
-  margin-left: 20px;
-}
-.header-restaurant__logo {
-  width: 50%;
-  max-width: 200px;
-  margin: auto;
 }
 
 .header-logo {
@@ -408,7 +392,6 @@ header {
   width: 50%;
   max-width: 200px;
   margin: auto;
-  margin-left: 30%;
 }
 
 .main-photo {
