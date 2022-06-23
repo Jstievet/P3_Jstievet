@@ -188,8 +188,7 @@ a {
 body {
   margin: 0%;
 }
-body h1,
-body h2 {
+body h1 {
   font-family: "Shrikhand", cursive;
 }
 
@@ -260,21 +259,6 @@ header {
   align-items: center;
 }
 
-.header-restaurant {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-.header-restaurant i {
-  margin-right: 10px;
-  margin-left: 20px;
-}
-.header-restaurant__logo {
-  width: 50%;
-  max-width: 200px;
-  margin: auto;
-}
-
 .header-logo {
   width: 50%;
   max-width: 200px;
@@ -341,6 +325,7 @@ header {
   width: 25%;
   padding-bottom: 25px;
   padding-top: 25px;
+  margin-bottom: -30px;
 }
 
 .container-fonctionnement {
@@ -408,7 +393,6 @@ header {
   width: 50%;
   max-width: 200px;
   margin: auto;
-  margin-left: 30%;
 }
 
 .main-photo {
@@ -466,7 +450,6 @@ header {
   background-color: rgb(231, 227, 227);
   border-radius: 40px 40px 0 0;
   transform: translateY(-30px);
-  margin-bottom: -27px;
 }
 @media (min-width: 992px) {
   .container-menu .menu {
@@ -626,14 +609,14 @@ header {
   transition: all 1000ms;
 }
 .menu__card__description__container {
-  width: 80%;
+  width: 100%;
   padding-left: 15px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 .menu__card__description__detail {
-  max-width: 80%;
+  max-width: 100%;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -642,7 +625,7 @@ header {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  max-width: 80%;
+  max-width: 100%;
 }
 .menu__card__description__price {
   width: 20%;
