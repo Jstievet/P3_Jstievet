@@ -44,8 +44,17 @@ body {
   border: 2px solid rgba(255, 255, 255, 0.4);
   position: absolute;
   transform: translate(-50% -50%);
-  top: 40%;
-  left: 45%;
+  top: 45%;
+  left: 35%;
+
+  @include desktop-only {
+    top: 40%;
+    left: 45%;
+  }
+  @include tablette-only {
+    top: 40%;
+    left: 45%;
+  }
 }
 .loader:after {
   content: "";

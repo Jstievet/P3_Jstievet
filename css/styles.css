@@ -212,8 +212,20 @@ body h1 {
   border: 2px solid rgba(255, 255, 255, 0.4);
   position: absolute;
   transform: translate(-50% -50%);
-  top: 40%;
-  left: 45%;
+  top: 45%;
+  left: 35%;
+}
+@media (min-width: 992px) {
+  .loader {
+    top: 40%;
+    left: 45%;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .loader {
+    top: 40%;
+    left: 45%;
+  }
 }
 
 .loader:after {
